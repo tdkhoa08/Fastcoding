@@ -5,145 +5,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>axit</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container-fluid">
-       <!--navbar-->
-        <div class="row" id="navbar">
-            <div class="col-md-6" style="padding-left:15%; padding-top:12px">
-                <img href="" src="img/Logo.png">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" aria-label="Ninth navbar example">
+        <div class="container-xl">
+          <a class="navbar-brand" href="#"><img href="" src="img/Logo.png"></a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar-collapse collapse" id="navbarsExample07XL" style="">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <section class="home-banner">
+        <div class="container">
+            <!--header-->
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img class="home-banner__logo" src="img/Logo(175x60).png">
+                    <h2 class="home-banner__title">
+                        MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
+                    </h2>
+                    <div class="home-banner__sub">
+                        <i>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                        </i>
+                    </div>
+                    <button type="button" class="btn home-banner__btn">Download</button>
+                </div>
+                <div class="col-lg-4 ms-auto">
+                    <form action="" method="">
+                        <div class="card">
+                            <div class="card__header">
+                                Try Your <span style="color:#ff9b51;">FREE</span> Trial Today</b>
+                            </div>
+                            <div class="card__body">
+                                <div class="mb-4">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="password" class="form-control" placeholder="Password">
+                                </div>
+                            </div>
+                            <button type="button" class="card__button">Get Started</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="col-md-6">
-                <nav class="navbar navbar-expand-lg ">
-                    <div class="container-fluid">
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item me-5">
-                                <a class="nav-link" aria-current="page" href="">Features</a>
-                            </li>
-                            <li class="nav-item me-5">
-                                <a class="nav-link" href="">About</a>
-                            </li>
-                            <li class="nav-item me-5">
-                                <a class="nav-link" href="#">Pricing</a>
-                            </li>
-                            <li class="nav-item me-5">
-                                <a class="nav-link" href="">Reviews</a>
-                            </li>
-                            <li class="nav-item me-5">
-                                <a class="nav-link" href="">Contact</a>
-                            </li>
-                        </ul>
+        </div>
+    </section>
+
+    <section class="home-tabs">
+        <div class="container">
+            <div class="d-flex align-items-start">
+              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">TAB 1</button>
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">TAB 2</button>
+                <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">TAB 3</button>
+              </div>
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-5 order-md-2">
+                            <img class="w-100" src="img/BGR2(320x253).png" alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="tab-pane__title">Tabs with soft transitioning effect.</div>
+                            <div class="tab-pane__content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                                penatibus et magnis dis parturient montes.</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                bibendum laoreet.</p>
+                            </div>
+                             <button type="button" class="btn tab-pane__btn">Download</button>
                         </div>
                     </div>
-                </nav>
-            </div>
-            
-        </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-5 order-md-2">
+                            <img class="w-100" src="img/BGR2(320x253).png" alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="tab-pane__title">Tabs with soft transitioning effect.</div>
+                            <div class="tab-pane__content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                                penatibus et magnis dis parturient montes.</p>
 
-        <!--header-->
-        <div class="row" id="header">
-            <div class="col-md-6" style="padding-left:15%;">
-                <img class="w-100" src="img/Logo(175x60).png">
-                <div style="font-size: 1.5rem; color: white; padding-top: 4%">
-                    MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
-                </div>
-                <hr width="20%" size="5px" color="white"/>
-                <div class="Lorem">
-                    <i>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
-                    </i>
-                </div>
-                <div style="padding-top: 5%;">
-                    <button type="button" class="btn btn-outline-secondary">Download</button>
-                </div>
-            </div>
-            <div class="col-md-6" style="padding-left:12%; padding-top: 2%;">
-                <form action="" method="">
-                    <div class="card" style="width: 20rem; font-size: 20px;">
-                        <ul class="list-group list-group-flush" >
-                            <li class="list-group-item" style="text-align: center;background-color: #FBFBEF;"><b > Try Your <span style="color:#ff9b51;">FREE</span> Trial Today</b></li>
-                            <li class="list-group-item">
-                                <input type="text" class="form-control" style="border: 0px;" placeholder="Name">
-                            </li>
-                            <li class="list-group-item">
-                                <input type="text" class="form-control" style="border: 0px;" placeholder="Email"/>
-                            </li>
-                            <li class="list-group-item">
-                                <input type="text" class="form-control" style="border: 0px;" placeholder="Password"/>
-                            </li>
-                            <li class="list-group-item" style="background-color:#ff9b51;text-align: center;">
-                                <button type="button" style="border: 0px;color:white;background-color:#ff9b51">Get Started</button>
-                            </li>
-                        </ul>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                bibendum laoreet.</p>
+                            </div>
+                             <button type="button" class="btn tab-pane__btn">Download</button>
+                        </div>
                     </div>
-                </form>
-            </div>
-        </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-5 order-md-2">
+                            <img class="w-100" src="img/BGR2(320x253).png" alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="tab-pane__title">Tabs with soft transitioning effect.</div>
+                            <div class="tab-pane__content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                                penatibus et magnis dis parturient montes.</p>
 
-        <!--features 1-->
-        <div class="row features-panel-1 features-main">
-            <div class="col-md-3 features-main__child">
-                <button type="button" class="btn-tab">TAB 1</button>
-                <button type="button" class="btn-tab">TAB 2</button>
-                <button type="button" class="btn-tab">TAB 3</button>
-            </div>
-            <div class="col-md-4" style="padding-left:5%">
-                <div class="title-features1">
-                    Tabs with soft transitioning effect.
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                bibendum laoreet.</p>
+                            </div>
+                             <button type="button" class="btn tab-pane__btn">Download</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="Lorem">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
-                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-                    penatibus et magnis dis parturient montes.</p>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                    bibendum laoreet.</p>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-outline-secondary"style="border: 0px; color:white;background-color:#ff9b51;" >Download</button>
-                </div>
-            </div>
-            <div class="col-md-5" style="padding-left:5%">
-                <img class="w-100" src="img/BGR2(320x253).png" alt="">
+              </div>
             </div>
 
         </div>
-        
-        <!--features 2-->
-        <div class="row features-panel__main" id="features-panel-2">
-            <div class="col-md-6 features-panel__main__child" style="padding-left:12%;">
+    </section>
+
+    <section class="home-sublist">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
                 <img class="w-100" src="img/BGR3(525x375).png" alt="">
             </div>
-            <div class="col-md-6" style="padding-left:10% ;">
-                <div class="title-features2-3">
-                    Sub list section
-                </div>
-                <hr width="75px" size="7px" color="#ff9b51" noshade="none"/>
-                <div class="Lorem">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
-                    Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
-                </div>
-                <div class="container-fluid">
+            <div class="col-lg-7">
+                <div class="home-sublist__right">
+                    <h2 class="home-sublist__title">
+                        Sub list section
+                    </h2>
+                    <div class="home-sublist__excerpt">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                        Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                    </div>
                     <div class="row">
-                        <div class="col-md-4" id="icon-up"><img class="w-100" src="img/icon1(18x14).png" alt=""></div>
-                        <div class="col-md-8">
+                        <div class="col-md-4 icon-up"><img class="w-100" src="img/icon1(18x14).png" alt=""></div>
+                        <div class="col">
                             <b>Title</b>
-                            <p class="Lorem"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                            <p class="Lorem"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                                 bibendum laoreet.</i></p>
                         </div>
                         <div class="row">
-                            <div class="col-md-4" id="icon-up"><img class="w-100" src="img/icon1dl(18x14).png" alt=""></div>
-                            <div class="col-md-8">
+                            <div class="col-md-4 icon-up"><img class="w-100" src="img/icon1dl(18x14).png" alt=""></div>
+                            <div class="col">
                                 <b>Title</b>
-                                <p class="Lorem"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+                                <p class="Lorem"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
                                     justo commodo</i></p>
                             </div>
                         </div>
@@ -151,31 +195,37 @@
                 </div>
             </div>
         </div>
+      </div>
+    </section>
 
-        <!--features 3-->
-        <div class="row features-panel-1">
-            <div class="col-md-6" style="padding-left:18%;">
-                <div class="title-features2-3">
-                    Standard Picture Section
+    <section class="home-picture">
+      <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="home-picture__title">
+                        Standard Picture Section
+                    </div>
+                    <div class="home-picture__excerpt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                            euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
+                            et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis
+                            natoque penatibus et magnis dis parturient montes.</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                        bibendum laoreet.</p>
+                    </div>
                 </div>
-                <hr width="75px" size="7px" color="#ff9b51" noshade="none"/>
-                <div class="Lorem">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
-                        euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan 
-                        et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis 
-                        natoque penatibus et magnis dis parturient montes.</p>
-                        
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                    bibendum laoreet.</p>
+                <div class="col-lg-6">
+                    <img class="w-100" src="img/BGR4(525x375).png" alt="">
                 </div>
             </div>
-            <div class="col-md-6">
-                <img class="w-100" src="img/BGR4(525x375).png" alt="">
-            </div>
-        </div>
+      </div>
+    </section>
 
-        <!--Our Process-->
-        <div class="container" id="our-process">
+    <section class="home-why">
+      <div class="container">
+
+        <div id="our-process">
             <div class="our-process">
                 <span class="our-process__span">WHY THIS IS AWESOME</span>
             </div>
@@ -184,62 +234,67 @@
             </p>
             <div class="row">
                 <div class="col-md-4">
-                    <div id="icon-70x70">
-                        <img class="w-100" src="img/lamp.png" alt="">
+                    <div class="icon-70x70">
+                        <img src="img/lamp.png" alt="">
                     </div>
                     <div class="title-our-process">
                         Thoughtful Design
                     </div>
                     <div class="Lorem">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing 
-                        elit. Aenean euismod bibendum laoreet. Proin gravida 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aenean euismod bibendum laoreet. Proin gravida
                         dolor sit amet lacus accumsan et viverra.
                     </div>
                 </div>
                 <div class="col-md-4" >
-                    <div id="icon-70x70">
-                        <img class="w-100" src="img/keyboard.png" alt="">
+                    <div class="icon-70x70">
+                        <img src="img/keyboard.png" alt="">
                     </div>
                     <div class="title-our-process">
                         Well Crafted
                     </div>
                     <div class="Lorem">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing 
-                        elit. Aenean euismod bibendum laoreet. Proin gravida 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aenean euismod bibendum laoreet. Proin gravida
                         dolor sit amet lacus accumsan et viverra.
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div id="icon-70x70">
-                        <img class="w-100" src="img/lightning.png" alt="">
+                    <div class="icon-70x70">
+                        <img src="img/lightning.png" alt="">
                     </div>
                     <div class="title-our-process">
                         Easy to Customize
                     </div>
                     <div class="Lorem">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing 
-                        elit. Aenean euismod bibendum laoreet. Proin gravida 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aenean euismod bibendum laoreet. Proin gravida
                         dolor sit amet lacus accumsan et viverra.
                     </div>
                 </div>
             </div>
         </div>
+      </div>
+    </section>
 
-        <!--Custom Section-->
-        <div class="row" id="custom-section">
-            <div class="custom-section">
+    <section class="home-stylish">
+      <div class="container">
+        <div id="custom-section">
+            <h2 class="home-stylish__title">
                 STYLISH AXURE DESIGN
-            </div>
+            </h2>
                 <p class="explain">
                     Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!
                 </p>
             <div>
-                <button type="button" class="btn btn-outline-secondary">Download</button>
+                <button type="button" class="btn home-stylish__btn">Download</button>
             </div>
         </div>
-
-        <!--Contact Us-->
-        <div class="row" id="contact-us-panel">
+      </div>
+    </section>
+    <section class="home-contact">
+      <div class="container">
+        <div id="contact-us-panel">
             <div class="our-process">
                 <span class="our-process__span">CONTACT US</span>
             </div>
@@ -247,34 +302,41 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             <form action="" method="">
-                <div class="container" style="padding-left: 15%; padding-right: 15%;">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input type="text" class="form-control1" id="exampleFormControlInput1" placeholder="Name">
-                            <input type="email" class="form-control1" id="exampleFormControlInput1" placeholder="Email">
-                            <input type="text" class="form-control1" id="exampleFormControlInput1" placeholder="Subject">
+                <div class="row mb-4 pb-3">
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <input type="text" class="form-control"  placeholder="Name">
                         </div>
-                        <div class="col-md-6">
-                            <textarea class="form-control1" id="exampleFormControlTextarea1" placeholder="Message" rows="5"></textarea>
+                        <div class="mb-4">
+                            <input type="email" class="form-control"  placeholder="Email">
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" class="form-control"  placeholder="Subject">
                         </div>
                     </div>
-                    <div style="padding: 10px;">
-                        <button type="button" class="btn btn-outline-secondary">Send Message</button>
+                    <div class="col-md-6 mb-4">
+                        <textarea class="form-control h-100" placeholder="Message" rows="5"></textarea>
                     </div>
                 </div>
+
+                <button type="button" class="btn home-contact__btn">Send Message</button>
             </form>
         </div>
+      </div>
+    </section>
+
 
         <!--Footer-->
-        <div class="row" id="footer">
-            <div>
+    <footer class="footer">
+        <div class="container">
+            <div class="mb-2">
                 <img src="img/icon-footer.png" alt="" >
             </div>
             <div>
                 © 2021 Axure Themes
             </div>
         </div>
-    </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
